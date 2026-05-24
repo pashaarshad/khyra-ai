@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 import { tanstackStart } from "@tanstack/react-start/plugin/vite";
-import { cloudflare } from "@cloudflare/vite-plugin";
+import netlify from "@netlify/vite-plugin-tanstack-start";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import tsConfigPaths from "vite-tsconfig-paths";
@@ -9,13 +9,11 @@ export default defineConfig({
   plugins: [
     tsConfigPaths(),
     tailwindcss(),
-    cloudflare({
-      viteEnvironment: { name: "ssr" },
-    }),
     tanstackStart({
       server: { entry: "server" },
     }),
     react(),
+    netlify(),
   ],
   resolve: {
     dedupe: ["react", "react-dom", "@tanstack/react-router"],
