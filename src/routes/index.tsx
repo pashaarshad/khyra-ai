@@ -5,7 +5,7 @@ import {
   Mic, Globe, Zap, ShieldCheck, Headphones, Workflow, Activity,
   Hotel, Building2, Server, Sparkles, Stethoscope, PawPrint,
 } from "lucide-react";
-import mascot from "@/assets/khyra-mascot.png"; // asset filename kept as-is
+import mascot from "@/assets/kharaa-mascot.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -728,7 +728,7 @@ function Footer() {
           </div>
         </div>
         <div className="mt-12 flex flex-wrap items-center justify-between gap-4 border-t border-border pt-6 text-xs text-muted-foreground">
-          <div>© 2025 Kharaa AI. Built in India for Indian businesses.</div>
+          <div>© 2026 Kharaa AI. Built in India for Indian businesses.</div>
           <div className="flex gap-5">
             <a href="#" className="hover:text-foreground">Privacy</a>
             <a href="#" className="hover:text-foreground">Terms</a>
